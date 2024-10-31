@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Are you gay?</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    </head>
+<body>
+
+<h2>Are you gay?</h2>
+
+<h3>Instructions</h3>
+<p>Press the "click me button". "cancel" is no and "ok" is yes.</p>
+
+<br>
+
+<img src="images/A3.png">
+<img class="ArrowR" src="images/A4.png">
+
+<div>
+<button onclick="myFunction()">Press me</button>
+</div>
+<img src="images/A1.png">
+<img class="ArrowR" src="images/A2.png">
+
+<h2>Answer:</h2>
+
+<p id="demo"></p>
+
+<script>
+
+function myFunction() {
+  var txt;
+  if (confirm("are you gay?")) {
+    txt = "The server said... Your gay??";
+
+var txt;
+if (confirm("are you sure your gay?")) {
+    txt = "The server said... I knew it!";
+} else {
+    txt = "The server said... I dont belive it"
+}
+
+  } else {
+    txt = "The server said... You arent gay?!";  
+
+    var txt;
+    if (confirm("are you sure your not gay?")) {
+    txt = "The server said... I dont belive you "
+    } else {
+        txt = "The server said... I knew it!";
+    }
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
